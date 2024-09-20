@@ -15,7 +15,7 @@
             <div class="camera"></div>
             <div class="display">
               <div class="artboard artboard-demo phone-3">
-                <div class="flex justify-between">
+                <div class="flex justify-between mt-8  w-11/12 mx-auto">
                     <!-- left -->
                     <div class="stats shadow">
                         <div class="stat">
@@ -41,8 +41,8 @@
                    </div>
                    <!-- divider -->
                    <div class="divider"></div>
-                   <!-- form -->
-                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                   <!--add money form -->
+                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -62,11 +62,33 @@
                       </div>
                     </form>
                   </div>
+                  <!-- cashout form -->
+                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">Cashout Amount</span>
+                        </label>
+                        <input id="input-cash-out" type="text" placeholder="Cashout Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold">4 Digit Pin</span>
+                        </label>
+                        <input id="cashout-pin" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" autocomplete="off" required />
+                        
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-cash-out" class="btn bg-[#0874F2] text-white rounded-full">Cashout Money</button>
+                      </div>
+                    </form>
+                  </div>
               </div>
             </div>
           </div>
     </main>
     
- <script src="js/home.js"></script>    
+ <!-- <script src="js/home.js"></script>     -->
+  <script src="js/cashout.js"></script>
 </body>
 </html>
